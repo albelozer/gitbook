@@ -16,11 +16,11 @@ In this book I will store all my efforts to learn several modern technologies in
 
 And here's the list of my helpers:
 
-* Homebrew on Mac
-* Github
+* [Homebrew](https://brew.sh/)
+* [Github](https://github.com)
 * JSON
 * Vi
-* Sublime Text
+* [Sublime Text](https://www.sublimetext.com/)
 
 
 
