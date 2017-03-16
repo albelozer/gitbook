@@ -19,6 +19,7 @@ And here's the list of my helpers:
 * [Homebrew](https://brew.sh/)
 * [Github](https://github.com)
 * JSON
+* Python
 * Vi
 * [Sublime Text](https://www.sublimetext.com/)
 
