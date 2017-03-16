@@ -1,6 +1,6 @@
 # Introduction & Contents
 In this book I will store all my efforts to learn several modern technologies in networking. They are:
-- [Ansible](ansible)
+- Ansible
 - Docker
 - OpenStack
 - Openflow
