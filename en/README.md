@@ -1,6 +1,6 @@
 # Introduction & Contents
 
-My name if {{ myname }}. In this book I will save all my efforts to learn several modern technologies in networking. They are:
+My name if {{ myname_en }}. In this book I will save all my efforts to learn several modern technologies in networking. They are:
 
 * [Ansible](ansible/README.md)
 * Docker
