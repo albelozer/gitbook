@@ -1,8 +1,7 @@
 {
-	"author": "Alexey Belozerov <albelozer@gmail.com>",
-	
-	"variables": {
-		"myname_en": "Alexey Belozerov",
-		"myname_ru": "Алексей Белозеров"
-	}
+  "author": "Alexey Belozerov <albelozer@gmail.com>",
+  "variables": {
+    "myname_en": "Alexey Belozerov",
+    "myname_ru": "Алексей Белозеров"
+  }
 }
