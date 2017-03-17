@@ -2,13 +2,13 @@
 
 Меня зовут {{ book.myname_ru }}. В этой книге я буду фиксировать процесс своего обучения новым технологиям, которые сейчас активно развиваются и применяются в сетях для автоматизации. Прежде всего это:
 
-{% include "/list.md" %}
+{% include "./list.md" %}
 
 * [Ansible](ansible/README.md)
 * Docker
 * OpenStack
 * Openflow
-* [Vagrant](/vagrant/README.md)
+* [Vagrant](vagrant/README.md)
 * [Jinja2](jinja2/README.md)
 * NETCONF
 * YANG
