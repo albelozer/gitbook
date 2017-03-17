@@ -6,7 +6,7 @@ In this book I will store all my efforts to learn several modern technologies in
 * Docker
 * OpenStack
 * Openflow
-* Vagrant
+* [Vagrant](/vagrant/README.md)
 * Jinja2
 * NETCONF
 * YANG
@@ -16,13 +16,13 @@ In this book I will store all my efforts to learn several modern technologies in
 
 And here's the list of my helpers:
 
-* [Homebrew](https://brew.sh/) — package manager for Mac
-* [Github](https://github.com) — you know
-* [JSON](https://en.wikipedia.org/wiki/JSON) — a way of storing data
-* [YAML](https://en.wikipedia.org/wiki/YAML) — a way of storing data for ansible
-* [Python](https://www.python.org/) — you know
-* [Vim](http://www.vim.org/) — console text editor
-* [Sublime Text](https://www.sublimetext.com/) — powerful GUI text editor
+* [Homebrew](https://brew.sh/) — package manager for Mac
+* [Github](https://github.com) — you know
+* [JSON](https://en.wikipedia.org/wiki/JSON) — a way of storing data
+* [YAML](https://en.wikipedia.org/wiki/YAML) — a way of storing data for ansible
+* [Python](https://www.python.org/) — you know
+* [Vim](http://www.vim.org/) — console text editor
+* [Sublime Text](https://www.sublimetext.com/) — powerful GUI text editor
 
 
 
