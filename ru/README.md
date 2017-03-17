@@ -4,18 +4,6 @@
 
 {% include "./list.md" %}
 
-* [Ansible](ansible/README.md)
-* Docker
-* OpenStack
-* Openflow
-* [Vagrant](vagrant/README.md)
-* [Jinja2](jinja2/README.md)
-* NETCONF
-* YANG
-* YDK-py
-* Chef
-* Puppet
-
 А тут список моих помощников:
 
 * [Homebrew](https://brew.sh/) — менеджер пакетов для Mac (как apt-get в Ubuntu)

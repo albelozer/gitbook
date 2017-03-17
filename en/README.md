@@ -2,17 +2,7 @@
 
 My name is {{ book.myname_en }}. In this book I will save all my efforts to learn several modern technologies in networking. They are:
 
-* [Ansible](ansible/README.md)
-* Docker
-* OpenStack
-* Openflow
-* [Vagrant](/vagrant/README.md)
-* [Jinja2](jinja2/README.md)
-* NETCONF
-* YANG
-* YDK-py
-* Chef
-* Puppet
+{% include "./list.md" %}
 
 And here's the list of my helpers:
 
@@ -23,6 +13,3 @@ And here's the list of my helpers:
 * [Python](https://www.python.org/) — you know
 * [Vim](http://www.vim.org/) — console text editor
 * [Sublime Text](https://www.sublimetext.com/) — powerful GUI text editor
-
-
-
