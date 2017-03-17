@@ -8,7 +8,7 @@
 
 	"links": {
         "sidebar": {
-            "Language": "LANGS.md"
+            "Language": "/LANGS.md"
         }
     }
 }
