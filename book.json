@@ -4,5 +4,11 @@
 	"variables": {
 		"myname_en": "Alexey Belozerov",
 		"myname_ru": "Алексей Белозеров"
-	}
+	},
+
+	"links": {
+        "sidebar": {
+            "Language": "LANGS.md"
+        }
+    },
 }
