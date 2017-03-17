@@ -1,6 +1,6 @@
 # Introduction & Contents
 
-In this book I will store all my efforts to learn several modern technologies in networking. They are:
+In this book I will save all my efforts to learn several modern technologies in networking. They are:
 
 * [Ansible](ansible.md)
 * Docker
