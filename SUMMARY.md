@@ -1,5 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Ansible](ansible.md)
+* [Ansible](ansible/README.md)
+* [Vagrant](vagrant/README.md)
 
