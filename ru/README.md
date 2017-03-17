@@ -7,7 +7,7 @@
 * OpenStack
 * Openflow
 * [Vagrant](/vagrant/README.md)
-* Jinja2
+* [Jinja2](jinja2/README.md)
 * NETCONF
 * YANG
 * YDK-py
@@ -16,13 +16,13 @@
 
 А тут список моих помощников:
 
-* [Homebrew](https://brew.sh/) — package manager for Mac
-* [Github](https://github.com) — you know
-* [JSON](https://en.wikipedia.org/wiki/JSON) — a way of storing data
-* [YAML](https://en.wikipedia.org/wiki/YAML) — a way of storing data for ansible
-* [Python](https://www.python.org/) — you know
-* [Vim](http://www.vim.org/) — console text editor
-* [Sublime Text](https://www.sublimetext.com/) — powerful GUI text editor
+* [Homebrew](https://brew.sh/) — менеджер пакетов для Mac (как apt-get в Ubuntu)
+* [Github](https://github.com) — можно не объяснять
+* [JSON](https://en.wikipedia.org/wiki/JSON) — формат хранения и передачи данных
+* [YAML](https://en.wikipedia.org/wiki/YAML) — формат хранения и передачи данных, суперсет JSON, используется в ansible
+* [Python](https://www.python.org/) — язык программирования
+* [Vim](http://www.vim.org/) — консольный текстовый редактор
+* [Sublime Text](https://www.sublimetext.com/) — мощный графический редактор текстов
 
 
 
