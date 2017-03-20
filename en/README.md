@@ -1,5 +1,7 @@
 # Introduction
 
+ >Initialy all text goes to English version.
+
 My name is {{ book.myname_en }}. In this book I will save all my efforts to learn several modern technologies in network automation. They are:
 
 {% include "./list.md" %}
