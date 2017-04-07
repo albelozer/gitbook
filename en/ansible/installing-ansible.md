@@ -4,8 +4,8 @@ You can use any host to install Ansible. I used [vagrant](/vagrant/README.md) Ub
 ```
 apt-get install ansible
 ```
-The question is what are you going to manage with ansible and from what control host.
+The question is what are you going to manage with Ansible (managed hosts or devices) and from what control host.
 
-As for now I use Ansible from Vagrant Ubuntu VM. All Ansible configuration, playbooks and tasks are pushed to a git. If I want to more Ansible to another host this will be as easy as clone repo from git.
+As for now I use Ansible from Vagrant Ubuntu VM. All Ansible configuration, playbooks and tasks are pushed to a git. If I want to move Ansible to another host this will be as easy as clone repo from git.
 
-I don't have managed hosts yet and all Ansible operations are performed locally.
+I don't have managed hosts yet (except AWS VM) and almost all Ansible operations are performed locally.
