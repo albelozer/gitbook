@@ -18,9 +18,9 @@ ERROR! The API server (https://galaxy.ansible.com/api/) is not responding, pleas
 Example:
 ```bash
 cisco@server-1:~/anstest$ ansible-galaxy init csr1k --offline
-- csr1k was created successfully
+&&&- csr1k was created successfully
 ```
-You'll have the following tree
+You'll have the following folder tree and default files:
 ```bash
 cisco@server-1:~/anstest$ tree roles/
 └── csr1k
