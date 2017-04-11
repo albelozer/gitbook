@@ -1,6 +1,6 @@
 # Ansible vagrant localhost connection
 
-The short manual of how to connect ansible to the vagrant VMs running localy on Mac OS X.
+The short manual of how to connect from locally installed Ansible to the Vagrant VMs running localy on Mac OS X.
 
 1. Use **vagrant ssh-config** command to identify ssh ports of runnins VMs. Details may be found [here](http://automation.ipspace.net/Example:Creating_Ansible_Inventory_from_Vagrant_SSH_Configuration).
 
@@ -20,7 +20,7 @@ The short manual of how to connect ansible to the vagrant VMs running localy on 
       LogLevel FATAL
     ```
 
-2. Change the hosts file for ansible project, add ssh port (2222).
+2. Change the hosts file for Ansible project, add ssh port (2222).
 
     ```
     ABELOZER-M-9202:ansible abelozer$ pwd
@@ -28,7 +28,7 @@ The short manual of how to connect ansible to the vagrant VMs running localy on 
     ABELOZER-M-9202:ansible abelozer$ cat hosts
     [AWS]
     35.166.112.128
-    
+
     [local]
     localhost:2222
     ```
@@ -43,5 +43,3 @@ The short manual of how to connect ansible to the vagrant VMs running localy on 
         "ping": "pong"
     }
     ```
-
->Links: [index](index.md)

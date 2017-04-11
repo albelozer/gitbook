@@ -9,13 +9,14 @@
     ```
     chmod 400 ansible-test.pem
     ```
-    
+
 4. Connect to your instance using its Public DNS:
 
     ```
     ec2-35-166-112-128.us-west-2.compute.amazonaws.com
     ```
->You may need to change the settings of **security group** to grant SSH access from your IP.
+
+> **Note** You may need to change the settings of *security group* to grant SSH access from your IP.
 
 ### Example:
 
@@ -25,5 +26,3 @@ ssh -i "ansible-test.pem" ec2-user@ec2-35-166-112-128.us-west-2.compute.amazonaw
 
 Please note that in most cases the username above will be correct, however please ensure that you read your AMI usage instructions to ensure that the AMI owner has not changed the default AMI username.
 If you need any assistance connecting to your instance, please see our connection documentation.
-
->Links: [index](index.md)
