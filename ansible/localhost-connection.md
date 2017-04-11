@@ -32,6 +32,7 @@ ABELOZER-M-9202:ansible abelozer$ cat hosts
 ```
 
 3. Add your id_rsa.pub key to the vagrant VM authorized_keys file.
+
 4. Check the rechability from ansible.
 
 ```bash
