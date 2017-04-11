@@ -16,9 +16,30 @@ Use **ansible-galaxy init** *role-name* for creating folder structure and files 
 ERROR! The API server (https://galaxy.ansible.com/api/) is not responding, please try again later.
 ```
 Example:
-```
+```bash
 cisco@server-1:~/anstest$ ansible-galaxy init csr1k --offline
 - csr1k was created successfully
+```
+You'll have the following tree
+```bash
+cisco@server-1:~/anstest$ tree roles/
+└── csr1k
+    ├── defaults
+    │   └── main.yml
+    ├── files
+    ├── handlers
+    │   └── main.yml
+    ├── meta
+    │   └── main.yml
+    ├── README.md
+    ├── tasks
+    │   └── main.yml
+    ├── templates
+    ├── tests
+    │   ├── inventory
+    │   └── test.yml
+    └── vars
+        └── main.yml
 ```
 
 ## Jinja2 templates
