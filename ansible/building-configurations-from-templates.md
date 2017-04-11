@@ -1,16 +1,16 @@
 # Building device configurations from Jinja2 templates
 
 This sounds not so complicated but initially you must understand several Ansible terms and actions.
-1. Inventory
-2. Roles
-3. Templates
-4. Tasks
-5. Vars
+1. [Inventory](#inventory)
+2. [Roles](#roles)
+3. [Templates](#jinja2)
+4. [Tasks](#tasks)
+5. [Vars](#vars)
 6. [Playbooks](#playbooks)
 
-## Ansible inventory
+## <a id="inventory"></a>Ansible inventory
 
-## Ansible roles
+## <a id="roles"></a>Ansible roles
 Use **ansible-galaxy init** *role-name* for creating folder structure and files for a new role named role-name. Use *--offline* option if you don't have connectivity to Internet. Otherwise you'll get en error:
 ```
 ERROR! The API server (https://galaxy.ansible.com/api/) is not responding, please try again later.
@@ -42,10 +42,10 @@ cisco@server-1:~/anstest$ tree roles/
         └── main.yml
 ```
 
-## Jinja2 templates
+## <a id="jinja2"></a>Jinja2 templates
 
-## Ansible tasks
+## <a id="tasks"></a>Ansible tasks
 
-## Ansible vars
+## <a id="vars"></a>Ansible vars
 
 ## <a id="playbooks"></a>Ansible playbooks
