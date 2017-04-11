@@ -11,9 +11,14 @@ This sounds not so complicated but initially you must understand several Ansible
 ## Ansible inventory
 
 ## Ansible roles
-Use *ansible-galaxy init asr9k* for creating folder structure and files for a new role. Use *--offline* option if you don't have connectivity to Internet. Otherwise you'll get en error:
+Use **ansible-galaxy init** *role-name* for creating folder structure and files for a new role named role-name. Use *--offline* option if you don't have connectivity to Internet. Otherwise you'll get en error:
 ```
 ERROR! The API server (https://galaxy.ansible.com/api/) is not responding, please try again later.
+```
+Example:
+```
+cisco@server-1:~/anstest$ ansible-galaxy init csr1k --offline
+- csr1k was created successfully
 ```
 
 ## Jinja2 templates
