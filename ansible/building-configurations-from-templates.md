@@ -6,7 +6,7 @@ This sounds not so complicated but initially you must understand several Ansible
 3. Templates
 4. Tasks
 5. Vars
-6. Playbooks
+6. [Playbooks](#playbooks)
 
 ## Ansible inventory
 
@@ -48,4 +48,4 @@ cisco@server-1:~/anstest$ tree roles/
 
 ## Ansible vars
 
-## Ansible playbooks
+## <a name="playbooks">Ansible playbooks</a>
