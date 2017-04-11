@@ -16,7 +16,7 @@
     ec2-35-166-112-128.us-west-2.compute.amazonaws.com
     ```
 
-> **Note** You may need to change the settings of *security group* to grant SSH access from your IP.
+> **Note** You may need to change the settings of *security group* at AWS to grant SSH access from your IP.
 
 ### Example:
 
