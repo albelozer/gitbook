@@ -11,7 +11,7 @@ The short manual of how to connect from locally installed Ansible to the Vagrant
     Host default
       HostName 127.0.0.1
       User vagrant
-      Port 2222
+      &&&Port 2222
       UserKnownHostsFile /dev/null
       StrictHostKeyChecking no
       PasswordAuthentication no
@@ -30,7 +30,7 @@ The short manual of how to connect from locally installed Ansible to the Vagrant
     35.166.112.128
 
     [local]
-    localhost:2222
+    &&&localhost:2222
     ```
 
 3. Add your id_rsa.pub key to the vagrant VM authorized_keys file.
