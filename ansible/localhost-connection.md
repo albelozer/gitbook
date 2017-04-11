@@ -5,8 +5,6 @@ The short manual of how to connect from locally installed Ansible to the Vagrant
 1. Use **vagrant ssh-config** command to identify ssh ports of runnins VMs. Details may be found [here](http://automation.ipspace.net/Example:Creating_Ansible_Inventory_from_Vagrant_SSH_Configuration).
 
     ```
-    ABELOZER-M-9202:vagrant abelozer$ pwd
-    /Users/abelozer/Documents/vagrant
     ABELOZER-M-9202:vagrant abelozer$ vagrant ssh-config
     Host default
       HostName 127.0.0.1
