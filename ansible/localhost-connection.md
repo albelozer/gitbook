@@ -6,10 +6,10 @@ The short manual of how to connect from locally installed Ansible to the Vagrant
 
 ```bash
 ABELOZER-M-9202:vagrant abelozer$ vagrant ssh-config
-  Host default
+Host default
   HostName 127.0.0.1
   User vagrant
-  &&&Port 2222
+&&& Port 2222
   UserKnownHostsFile /dev/null
   StrictHostKeyChecking no
   PasswordAuthentication no
