@@ -1,4 +1,4 @@
-# Ansible vagrant localhost connection
+# Connecting Ansible to Vagrant VM on localhost
 
 The short manual of how to connect from locally installed Ansible to the Vagrant VMs running localy on Mac OS X.
 
