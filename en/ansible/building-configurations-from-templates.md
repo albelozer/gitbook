@@ -8,6 +8,8 @@ This sounds not so complicated but initially you must understand several Ansible
 5. Vars
 6. Playbooks
 
+> **Warning** tests
+
 ## Ansible inventory
 
 ## Ansible roles
