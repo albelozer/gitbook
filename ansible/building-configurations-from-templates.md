@@ -21,7 +21,7 @@ cisco@server-1:~/anstest$ ansible-galaxy init csr1k --offline
 &&&- csr1k was created successfully
 ```
 You'll have the following folder tree and default files:
-```
+```sh
 cisco@server-1:~/anstest$ tree roles/
 └── csr1k
     ├── defaults
