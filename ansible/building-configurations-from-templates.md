@@ -42,7 +42,7 @@ cisco@server-1:~/anstest$ tree roles/
         └── main.yml
 ```
 
-## [jinja2]Jinja2 templates
+## <a id="jinja2"></a>Jinja2 templates
 
 ## <a id="tasks"></a>Ansible tasks
 
