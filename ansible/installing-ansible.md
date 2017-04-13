@@ -1,7 +1,7 @@
 # Installing ansible
 
 You can use any host to install Ansible. I used [vagrant](/vagrant/README.md) Ubuntu VM to run deploy ansible. Inside Ubuntu we can use apt-get for installing Ansible.
-```bash
+```sh
 $ sudo apt-get install software-properties-common
 $ sudo apt-add-repository ppa:ansible/ansible
 $ sudo apt-get update
