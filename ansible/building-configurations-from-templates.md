@@ -12,9 +12,11 @@ This sounds not so complicated but initially you must understand several Ansible
 
 ## <a id="roles"></a>Ansible roles
 Use **ansible-galaxy init** *role-name* for creating folder structure and files for a new role named role-name. Use *--offline* option if you don't have connectivity to Internet. Otherwise you'll get en error:
+
 ```sh
 ERROR! The API server (https://galaxy.ansible.com/api/) is not responding, please try again later.
 ```
+
 Example:
 ```sh
 cisco@server-1:~/anstest$ ansible-galaxy init csr1k --offline
