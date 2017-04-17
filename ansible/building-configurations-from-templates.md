@@ -2,15 +2,15 @@
 
 This sounds not so complicated but initially you must understand several Ansible terms and actions.
 1. [Inventory](#ansible-inventory)
-2. [Roles](#roles)
-3. [Templates](#jinja2)
-4. [Tasks](#tasks)
-5. [Vars](#vars)
-6. [Playbooks](#playbooks)
+2. [Roles](#ansible-roles)
+3. [Templates](#jinja2-templates)
+4. [Tasks](#ansible-tasks)
+5. [Vars](#ansible-vars)
+6. [Playbooks](#ansible-playbooks)
 
 ## Ansible inventory
 
-## <a id="roles"></a>Ansible roles
+## Ansible roles
 Use **ansible-galaxy init** *role-name* for creating folder structure and files for a new role named role-name. Use *--offline* option if you don't have connectivity to Internet. Otherwise you'll get en error:
 
 ```sh
@@ -44,10 +44,10 @@ cisco@server-1:~/anstest$ tree roles/
         └── main.yml
 ```
 
-## <a id="jinja2"></a>Jinja2 templates
+## Jinja2 templates
 
-## <a id="tasks"></a>Ansible tasks
+## Ansible tasks
 
-## <a id="vars"></a>Ansible vars
+## Ansible vars
 
-## <a id="playbooks"></a>Ansible playbooks
+## Ansible playbooks
