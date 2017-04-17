@@ -16,4 +16,5 @@ As for now I use Ansible from Vagrant Ubuntu VM. All Ansible configuration, play
 I don't have managed hosts yet (except AWS VM) and almost all Ansible operations are performed locally.
 
 ## Links
+
 [Ansible Installation](http://docs.ansible.com/ansible/intro_installation.html)
