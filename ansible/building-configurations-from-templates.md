@@ -1,14 +1,14 @@
 # Building device configurations from Jinja2 templates
 
 This sounds not so complicated but initially you must understand several Ansible terms and actions.
-1. [Inventory](#inventory)
+1. [Inventory](#ansible-inventory)
 2. [Roles](#roles)
 3. [Templates](#jinja2)
 4. [Tasks](#tasks)
 5. [Vars](#vars)
 6. [Playbooks](#playbooks)
 
-## <a id="inventory"></a>Ansible inventory
+## Ansible inventory
 
 ## <a id="roles"></a>Ansible roles
 Use **ansible-galaxy init** *role-name* for creating folder structure and files for a new role named role-name. Use *--offline* option if you don't have connectivity to Internet. Otherwise you'll get en error:
