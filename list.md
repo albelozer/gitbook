@@ -7,5 +7,3 @@
 * NETCONF
 * YANG
 * YDK-py
-* Chef
-* Puppet
