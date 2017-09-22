@@ -138,4 +138,4 @@ The most advanced and fastest way. Looks like Ansible is optimized to work with 
   register: config # registering for further use
 ```
 
-Why you may want to `register` the output for this is the later useage. For example if I know that configuration was changed by a task I can perform some verification or something.
+Why you may want to `register` the output in a `config` var is the later usage. For example if I know that configuration was changed by a task I can perform verification or something.
