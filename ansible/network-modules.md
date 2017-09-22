@@ -18,7 +18,7 @@ It's better to check the reachability of the target host at the very beginning o
 ---
 # main.yml for the role
 
-- include: "playbooks/check_connectivity.yml"
+&&&- include: "playbooks/check_connectivity.yml"
 
 - include: "playbooks/{{ platform }}_backup.yml" # IOS config backup
   when: backup # var is defined for group_vars/csr1kv
