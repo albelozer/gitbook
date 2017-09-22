@@ -92,7 +92,7 @@ Let's examine line by line.
 - `before` - defines a command to run before applying `lines` at `parents` level.
 - `tags` - Ansible can tag tasks. Later you can call your playbook and filter tasks by tags.
 
-This is the handlers:
+These are the handlers:
 
 ```yaml
 ---
