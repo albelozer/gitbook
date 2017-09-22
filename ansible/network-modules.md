@@ -31,4 +31,52 @@ It's better to check the reachability of the target host at the very beginning o
 
 As you can see I call several other playbooks in the example above. The name of playbook has a Jijna variable {{ platform }} inside. Why do I do this? To make my main playbook universal.
 
-Let's look at other modules.
+Let's look at other modules from playbooks which I mentioned above.
+
+## ios_config, iosxr_config, nxos_config
+
+I use these modules for several purposes. First is not a general usage. I backup configuration. The filename for the playbooks is derived from {{ platform }} + "\_backup.yml". {{ platform }} var is defined as a group var. There are several ways to define variable in Ansible. But we'll talk about it in another article. Here are two playbooks:
+
+```yaml
+# file playbooks/cisco_ios_backup.yml
+---
+- name: Backup configuration
+  ios_config:
+    backup: yes
+  tags:
+    - backup
+```
+
+and
+
+```yaml
+# file playbooks/cisco_iosxr_backup.yml
+---
+- name: Backup configuration
+  iosxr_config:
+    backup: yes
+  tags:
+    - backup
+```
+
+But the original purpose of these modules is to configure devices. There are three ways of doing this.
+
+### Line by line configuration
+
+This is the slowest aproach.
+
+```yaml
+- name: Add ACLs MCast
+  register: result
+  notify:
+    - Write log
+    - Save configuration
+  ios_config:
+    lines:
+      - permit 10.201.2.0 0.0.0.255
+    parents: ['ip access-list standard BUILT-IN-ACL']
+    before: ['no ip access-list standard BUILT-IN-ACL']
+    match: exact
+  tags:
+    - config
+```
