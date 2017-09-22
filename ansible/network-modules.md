@@ -12,6 +12,8 @@ The first one is not a network module but I use it for checking device reachabil
     wait_for: host={{ inventory_hostname }} port="{{ port | default(22) }}"  timeout=5
 ```
 
+I should explain `port="{{ port | default(22) }}"`. This is Jinja2 filter. First it checkes the variable port. If it is defined ansible will use it. If not it will use the default value 22.
+
 It's better to check the reachability of the target host at the very beginning of a play. If the host is not reachable all following tasks will skip it. I call this playbook from another one.
 
 ```yaml
