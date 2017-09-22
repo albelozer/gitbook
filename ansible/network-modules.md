@@ -63,7 +63,7 @@ and
 
 But the original purpose of these modules is to configure devices. There are three ways of doing this.
 
-### Line by line configuration
+### 1. Line by line configuration
 
 This is the slowest aproach.
 
@@ -85,9 +85,55 @@ This is the slowest aproach.
 Let's examine line by line.
 
 - `name` - just a name, nothing more. By the way you can use vars in this name.
-- `notify` — this is the call of handlers with names "Write log" and "Save configuration".
+- `notify` — this is the call of **handlers** with names "Write log" and "Save configuration".
 - `ios_config` - call Ansible module.
 - `lines` - configuration lines.
 - `parents` - defines the level where `lines` are executed.
 - `before` - defines a command to run before applying `lines` at `parents` level.
-- `tags` - Ansible can tag tasks. Lates you can call your playbook and filtes tasks by tags.
+- `tags` - Ansible can tag tasks. Later you can call your playbook and filter tasks by tags.
+
+This is the handlers:
+
+```yaml
+---
+- name: Save IOS configuration
+  ios_config:
+    save_when: always
+
+- name: Write log
+  ios_command:
+    commands:
+      - send log Changes from ansible
+```
+
+You can define handlers at the end of the play. But I prefer using role handlers. By default Ansible will use the path `roles/role\_name/handlers/main.yml`.
+
+### 2. Configuration with predefined configuration file
+
+The easiest way.
+
+```yaml
+- name: Add ACLs from file
+  ios_config:
+    src: "acl.txt"
+  save_when: yes
+```
+
+- `save_when` is a new feature of this module arrived in Ansible 2.4. Before it has only `save` with `yes` or `no` as possible values. Now with `save_when` it has three options: `never`, `always` and `modified`.
+
+### 3. Configuration with Jinja2 templates
+
+The most advanced and fastest way. Looks like Ansible is optimized to work with j2 templates.
+
+```yaml
+---
+- name: Configure IOS devices from hosts_var with Jinja2 templates
+  ios_config:
+    provider: "{{ provider }}" # defined in group_vars/*/. Contains host, username, password
+    src: "{{ current_role }}.j2" # Main template. Can include other more specific templates
+    save_when: modified
+  notify:
+    - Write log # Handler writes message in syslog
+  tags: config
+  register: config # registering for further use
+```
