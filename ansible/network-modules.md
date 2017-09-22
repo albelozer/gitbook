@@ -6,9 +6,8 @@ Ansible provides a lot of network modules to work with different vendors and pro
 
 The first one is not a network module but I use it for checking device reachability. The playbook is as follows
 
-`---  `
-
-`- name: Checking SSH connectivity`
-
-`    wait_for: host={{ inventory_hostname }} port="{{ port | default(22) }}"  timeout=5`
-
+```yaml
+---
+- name: Checking SSH connectivity
+    wait_for: host={{ inventory_hostname }} port="{{ port | default(22) }}"  timeout=5
+```
