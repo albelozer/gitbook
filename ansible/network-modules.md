@@ -67,16 +67,25 @@ This is the slowest aproach.
 
 ```yaml
 - name: Add ACLs MCast
-  register: result
   notify:
     - Write log
     - Save configuration
   ios_config:
     lines:
       - permit 10.201.2.0 0.0.0.255
+      - permit 10.201.12.0 0.0.0.255
     parents: ['ip access-list standard BUILT-IN-ACL']
     before: ['no ip access-list standard BUILT-IN-ACL']
-    match: exact
   tags:
     - config
 ```
+
+Let's examine line by line.
+
+- `name` - just a name, nothing more. By the way you can use vars in this name.
+- `notify` — this is the call of handlers with names "Write log" and "Save configuration".
+- `ios_config` - call Ansible module.
+- `lines` - configuration lines.
+- `parents` - defines the level where `lines` are executed.
+- `before` - defines a command to run before applying `lines` at `parents` level.
+- `tags` - Ansible can tag tasks. Lates you can call your playbook and filtes tasks by tags.
