@@ -31,7 +31,7 @@ It's better to check the reachability of the target host at the very beginning o
 
 [Link to wait_for at ansible docs](http://docs.ansible.com/ansible/latest/wait_for_module.html)
 
-> **Note** `include_tasks` parameter has arrived in Ansible 2.4. Details [here](https://docs.ansible.com/ansible/devel/playbooks_reuse_includes.html).
+> **Note** `include_tasks` parameter has arrived in Ansible 2.4. Now there are static and dynamic includes. Details [here](https://docs.ansible.com/ansible/devel/playbooks_reuse.html) and [here](https://docs.ansible.com/ansible/devel/playbooks_reuse_includes.html).
 
 As you can see I call several other playbooks in the example above. The name of playbook has a Jijna variable {{ platform }} inside. Why do I do this? To make my main playbook universal.
 
