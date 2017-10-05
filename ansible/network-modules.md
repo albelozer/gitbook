@@ -20,16 +20,18 @@ It's better to check the reachability of the target host at the very beginning o
 ---
 # main.yml for the role
 
-&&&- include: "playbooks/check_connectivity.yml"
+&&&- include_tasks: "playbooks/check_connectivity.yml"
 
-- include: "playbooks/{{ platform }}_backup.yml" # IOS config backup
-  when: backup # var is defined for group_vars/csr1kv
+- include_tasks: "playbooks/{{ platform }}_backup.yml"
+  when: backup # var is defined for group_vars/group_name/vars
 
-- include: "playbooks/{{ platform }}_facts.yml"
-  when: facts # var is defined for group_vars/csr1kv
+- include_tasks: "playbooks/{{ platform }}_facts.yml"
+  when: facts # var is defined for group_vars/group_name/vars
 ```
 
 [Link to wait_for at ansible docs](http://docs.ansible.com/ansible/latest/wait_for_module.html)
+
+> **include_tasks** parameter has arrived in Ansible 2.4. Details [here](https://docs.ansible.com/ansible/devel/playbooks_reuse_includes.html).
 
 As you can see I call several other playbooks in the example above. The name of playbook has a Jijna variable {{ platform }} inside. Why do I do this? To make my main playbook universal.
 
@@ -116,7 +118,7 @@ The easiest way.
 - name: Add ACLs from file
   ios_config:
     src: "acl.txt"
-  save_when: yes
+  save_when: modified
 ```
 
 - `save_when` is a new feature of this module arrived in Ansible 2.4. Before it has only `save` with `yes` or `no` as possible values. Now with `save_when` it has three options: `never`, `always` and `modified`.
