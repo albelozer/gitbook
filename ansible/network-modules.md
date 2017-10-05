@@ -33,7 +33,7 @@ It's better to check the reachability of the target host at the very beginning o
 
 > **Note** `include_tasks` parameter has arrived in Ansible 2.4. Now there are static and dynamic includes. Details [here](https://docs.ansible.com/ansible/devel/playbooks_reuse.html) and [here](https://docs.ansible.com/ansible/devel/playbooks_reuse_includes.html).
 
-As you can see I call several other playbooks in the example above. The name of playbook has a Jijna variable {{ platform }} inside. Why do I do this? To make my main playbook universal.
+As you can see I call several other playbooks in the example above. The name of playbook has a Jijna variable {{ platform }} inside. Why do I do this? To make my main playbook universal and automatically change the name of playbook based on variable `platform`. Here we can have cisco_ios_backup.yml or cisco_iosxr_backup.yml. Both of them are predefined in playbooks folder.
 
 Let's look at other modules from playbooks which I mentioned above.
 
