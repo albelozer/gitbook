@@ -33,13 +33,13 @@ It's better to check the reachability of the target host at the very beginning o
 
 > **Note** `include_tasks` parameter has arrived in Ansible 2.4. Now there are static and dynamic includes. Details [here](https://docs.ansible.com/ansible/devel/playbooks_reuse.html) and [here](https://docs.ansible.com/ansible/devel/playbooks_reuse_includes.html).
 
-As you can see I call several other playbooks in the example above. The name of playbook has a Jijna variable {{ platform }} inside. Why do I do this? To make my main playbook universal and automatically change the name of playbook based on variable `platform`. Here we can have cisco_ios_backup.yml or cisco_iosxr_backup.yml. Both of them are predefined in playbooks folder.
+As you can see I call several other playbooks in the example above. The name of playbook has a Jijna variable `{{ platform }}` inside. Why do I do this? To make my main playbook universal and automatically change the name of playbook based on variable `{{ platform }}`. Here we can have cisco_ios_backup.yml or cisco_iosxr_backup.yml. Both of them are predefined in playbooks folder.
 
 Let's look at other modules from playbooks which I mentioned above.
 
 ## ios_config, iosxr_config, nxos_config
 
-I use these modules for several purposes. First is not a general usage. I backup configuration. The filename for the playbooks is derived from {{ platform }} + "\_backup.yml". {{ platform }} var is defined as a group var. There are several ways to define variable in Ansible. But we'll talk about it in another article. Here are two playbooks:
+I use these modules for several purposes. First is not a general usage. I backup configuration. The filename for the playbooks is derived from `{{ platform }}` + "\_backup.yml". `{{ platform }}` var is defined as a group var. There are several ways to define variable in Ansible. But we'll talk about it in another article. Here are two playbooks:
 
 ```yaml
 # file playbooks/cisco_ios_backup.yml
