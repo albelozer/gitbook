@@ -12,4 +12,4 @@ And here's the list of my helpers:
 * [YAML](https://en.wikipedia.org/wiki/YAML) — a way of storing data for ansible, a superset of JSON
 * [Python](https://www.python.org/) — you know
 * [Vim](http://www.vim.org/) — console text editor
-* [Sublime Text](https://www.sublimetext.com/) — powerful GUI text editor
+* [Atom](https://atom.io/) — powerful GUI text editor
